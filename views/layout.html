@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    {{#block "meta"}}
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{/block}}
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}boui是一个前端爱好者的家园，boui努力打造最优秀的Web前端学习的站点。boui力求原创，以一起学习，一起进步，共同分享为原则。boui站提供了有关于CSS,CSS3,javaScript,java,linux的技术文档、DEMO、资源,以及分享的信息与前端爱好者一起共勉。">
+    <meta name="keywords" content="{{keywords}},boui,前端,css3,w3c,transition,js,javaScript,java,java学习,linux,前端工程师">
+    {{#unless error}}
+        <link rel="dns-prefetch" href="http://www.bolzjb.com/">
+        <link rel="dns-prefetch" href="//static.bolzjb.com">
+        <link rel="stylesheet" href="//static.bolzjb.com/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//static.bolzjb.com/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//static.bolzjb.com/nprogress/nprogress.css">
+        {{#block "style"}}{{/block}}
+        <!--[if lt IE 9]>
+            <script src="//static.bolzjb.com/html5shiv/html5shiv.min.js"></script>
+            <script src="//static.bolzjb.com/respond.js/respond.min.js"></script>
+        <![endif]-->
+    {{/unless}}
+</head>
+<body>
+     {{{body}}}
+     {{#unless error}}
+        {{> footer}}
+        <script src="//static.bolzjb.com/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//static.bolzjb.com/nprogress/nprogress.js"></script>
+        <script src="//static.bolzjb.com/bootstrap/js/bootstrap.js"></script>
+        {{#block "script"}}{{/block}}
+        <!--
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8271d3834f4eab51f1c419911a4f46c3' type='text/javascript'%3E%3C/script%3E"));
+            $(function(){var img = $("[href*='tongji.baidu.com']");img.hide()});
+        </script>
+        -->
+     {{/unless}}
+</body>
+</html>

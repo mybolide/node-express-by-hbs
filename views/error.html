@@ -1,0 +1,20 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{error.status}}</title>
+</head>
+<body>
+  {{error.stack}}
+</body>
+</html>-->
+
+
+{{#block "style"}}
+<script>
+      var refer = document.referrer;
+      refer = refer ? refer.match(/^http:\/\/[a-z0-9.:]*\/?/)[0]:"http://www.bolzjb.com";
+      console.info(refer)
+      document.write('<script type="text\/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="'+refer+'" homePageName="回到我的主页"><\/script>');
+</script>
+{{/block}}
