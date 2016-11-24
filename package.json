@@ -1,10 +1,21 @@
 {
-  "name": "myapp",
-  "version": "0.0.0",
-  "private": true,
+  "name": "node-express-by-hbs",
+  "version": "0.0.1",
+  "description": "An easy express by hbs.",
   "scripts": {
     "start": "node-dev ./bin/www"
   },
+  "keywords": [
+    "express",
+    "node",
+    "easy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mybolide/node-express-by-hbs.git"
+  },
+  "author": "bolide",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",

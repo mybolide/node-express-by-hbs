@@ -12,6 +12,7 @@
 ⚠️：使用了node-dev启动项目，须安装node-dev模块，开发环境使用正常模式启动，如：forever
 
 ##### 使用
+    npm install node-express-by-hbs //初始化项目  
     npm install //安装依赖
     npm start //启动项目
 
